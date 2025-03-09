@@ -65,7 +65,7 @@
   .buttons {
     position: absolute;
     top: 20px;
-    right: 200px;
+    right: 180px;
     display: flex;
     gap: 10px;
     z-index: 10; /* 이미지 위에 표시되도록 설정 */
@@ -73,7 +73,7 @@
   
   .buttons button {
     padding: 8px 10px;
-    font-size: 16px;
+    font-size: 13px;
     cursor: pointer;
     border: none;
     background-color: #333;
