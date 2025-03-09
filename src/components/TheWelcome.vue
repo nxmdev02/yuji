@@ -21,7 +21,7 @@
 </template>
   
   <script setup>
-  import { ref } from "vue";
+  import { ref, onMounted } from "vue";
   
   const menuImages = {
     korean: "/images/menu-korean.jpg",
@@ -31,7 +31,14 @@
   };
   
   const selectedLanguage = ref("korean");
-  
+
+  onMounted(() => {
+  setTimeout(() => {
+    console.log('[setTimeout]')
+    window.scrollTo(0, 1);
+  }, 100);
+  });
+
   const changeLanguage = (lang) => {
     selectedLanguage.value = lang;
   };
