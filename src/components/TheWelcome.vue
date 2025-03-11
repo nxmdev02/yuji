@@ -8,7 +8,6 @@
         class="responsive-img"
         @click.stop="preventClick($event)"
       />
-      
       <!-- 🛠 버튼을 우측 상단으로 이동 -->
       <div class="buttons">
         <button @click="changeLanguage('korean')">🇰🇷 한국어</button>
@@ -22,7 +21,7 @@
   
   <script setup>
   import { ref, onMounted } from "vue";
-  
+
   const menuImages = {
     korean: "/images/menu-korean.jpg",
     english: "/images/menu-english.jpg",
@@ -53,7 +52,7 @@
   /* 전체 컨테이너 */
   .menu-container {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,16 +63,16 @@
   
   .buttons {
     position: absolute;
-    top: 20px;
-    right: 180px;
+    top: 10px;
+    right: 5vw;
     display: flex;
     gap: 10px;
     z-index: 10; /* 이미지 위에 표시되도록 설정 */
   }
   
   .buttons button {
-    padding: 8px 10px;
-    font-size: 13px;
+    padding: 8px 8px;
+    font-size: 12px;
     cursor: pointer;
     border: none;
     background-color: #333;
@@ -104,12 +103,12 @@
   @media (orientation: landscape) {
     .menu-container {
       width: 100vw;
-      height: 100vh;
+      height: 100dvh;
     }
   
     .menu-image {
       width: 100vw;
-      height: 100vh;
+      height: 100dvh;
     }
   
     .responsive-img {
