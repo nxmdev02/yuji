@@ -70,8 +70,8 @@ const changeLanguage = (lang) => {
 }
 
 .buttons button {
-  padding: 6px 10px;
-  font-size: 12px;
+  padding: 5px 8px;
+  font-size: 10px;
   cursor: pointer;
   border: none;
   background-color: #333;
@@ -119,7 +119,7 @@ const changeLanguage = (lang) => {
   
   .adjusted-buttons {
     top: 10px;
-    right: 10vw;
+    right: 8vw;
   }
 }
 </style>
