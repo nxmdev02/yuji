@@ -96,8 +96,10 @@ const changeLanguage = (lang) => {
 .responsive-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;  /* 이미지 확대 방지 */
   pointer-events: none; /* 이미지 클릭 방지 */
+  user-select: none;   /* 이미지 선택 방지 */
+  touch-action: none;  /* 터치로 확대 방지 */
 }
 
 @media (orientation: landscape) {
@@ -114,7 +116,7 @@ const changeLanguage = (lang) => {
   .responsive-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover; /* 이미지 확대 방지 */
   }
   
   .adjusted-buttons {
