@@ -6,6 +6,7 @@
         :src="menuImages[selectedLanguage]" 
         alt="Menu Image" 
         class="responsive-img"
+        draggable="false"
       />
       <!-- 🛠 버튼을 우측 상단으로 이동 -->
       <div class="buttons adjusted-buttons">
@@ -96,6 +97,7 @@ const changeLanguage = (lang) => {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  pointer-events: none; /* 이미지 클릭 방지 */
 }
 
 @media (orientation: landscape) {
@@ -117,7 +119,7 @@ const changeLanguage = (lang) => {
   
   .adjusted-buttons {
     top: 10px;
-    right: 2vw;
+    right: 10vw;
   }
 }
 </style>
