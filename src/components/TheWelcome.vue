@@ -50,9 +50,10 @@ const changeLanguage = (lang) => {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden; /* 화면을 벗어난 부분은 보이지 않도록 */
   background-color: white;
   position: relative;
+  touch-action: none;  /* 전체 화면 확대/축소 방지 */
 }
 
 .buttons {
@@ -90,16 +91,17 @@ const changeLanguage = (lang) => {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* 메뉴 이미지에 대한 스크롤 방지 */
 }
 
 /* 반응형 이미지 */
 .responsive-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* 이미지 확대 방지 */
+  object-fit: cover; /* 이미지가 화면을 채우도록 */
   pointer-events: none; /* 이미지 클릭 방지 */
   user-select: none;   /* 이미지 선택 방지 */
-  touch-action: none;  /* 터치로 확대 방지 */
+  touch-action: none;  /* 터치 확대 방지 */
 }
 
 @media (orientation: landscape) {
