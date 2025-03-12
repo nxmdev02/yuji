@@ -1,7 +1,7 @@
 <template>
   <div class="menu-container">
     <!-- 메뉴 이미지 -->
-    <div class="menu-image non-clickable">
+    <div class="menu-image">
       <img 
         :src="menuImages[selectedLanguage]" 
         alt="Menu Image" 
@@ -62,16 +62,15 @@ const changeLanguage = (lang) => {
 }
 
 .adjusted-buttons {
-  top: 20px;
-  right: 5vw;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  top: 10px;
+  right: 3vw;
+  padding: 6px 10px;
   border-radius: 10px;
 }
 
 .buttons button {
-  padding: 10px 12px;
-  font-size: 14px;
+  padding: 6px 10px;
+  font-size: 12px;
   cursor: pointer;
   border: none;
   background-color: #333;
@@ -90,7 +89,6 @@ const changeLanguage = (lang) => {
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none;
 }
 
 /* 반응형 이미지 */
@@ -118,8 +116,8 @@ const changeLanguage = (lang) => {
   }
   
   .adjusted-buttons {
-    top: 15px;
-    right: 3vw;
+    top: 10px;
+    right: 2vw;
   }
 }
 </style>
