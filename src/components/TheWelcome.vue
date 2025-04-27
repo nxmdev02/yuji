@@ -208,10 +208,10 @@ function refreshButton() {
 
 .refresh-image-button {
   position: fixed;
-  top: 5px;
+  top: 65px;
   left: 80px;
   z-index: 5;
-  padding: 20px 70px;
+  padding: 25px 80px;
   background-color: #333;
   color: white;
   border: none;
