@@ -2,6 +2,11 @@
   <div class="menu-container">
     <!-- 메뉴 이미지 -->
     <div class="menu-image">
+      <button
+        @click="refreshButton" 
+        class="refresh-image-button"
+      >
+      </button>
       <div style="margin-top: 20px;">
         <div 
           v-for="(image, index) in images" 
@@ -132,6 +137,10 @@ function endTouch() {
   dragging.value = false;
   dragIndex.value = null;
 }
+
+function refreshButton() {
+  window.location.reload()
+}
 </script>
 
 <style scoped>
@@ -195,6 +204,26 @@ function endTouch() {
   pointer-events: auto;
   user-select: auto;
   touch-action: none;
+}
+
+.refresh-image-button {
+  position: fixed;
+  top: 5px;
+  left: 80px;
+  z-index: 5;
+  padding: 20px 70px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: auto;
+}
+
+.refresh-image-button:hover {
+  background-color: black;
 }
 
 .add-image-button {
