@@ -88,8 +88,8 @@ const changeLanguage = (lang) => {
 function createImage() {
   images.value.push({
     src: '/images/soldout.png',
-    top: 100,  // 초기 위치
-    left: 100
+    top: 30,  // 초기 위치
+    left: 250
   });
 }
 
@@ -231,7 +231,7 @@ function refreshButton() {
   bottom: 20px;
   right: 20px;
   z-index: 20;
-  padding: 70px 150px;
+  padding: 35px 75px;
   background-color: #333;
   color: white;
   border: none;
