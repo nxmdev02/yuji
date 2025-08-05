@@ -231,7 +231,7 @@ function refreshButton() {
   bottom: 20px;
   right: 20px;
   z-index: 20;
-  padding: 35px 75px;
+  padding: 20px 30px;
   background-color: #333;
   color: white;
   border: none;
