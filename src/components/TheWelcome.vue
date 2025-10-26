@@ -33,20 +33,18 @@
         draggable="false"
       />
 
-      <!-- 언어 선택 버튼 우측 상단 -->
-      <div class="buttons adjusted-buttons">
-        <button @click="changeLanguage('korean')">🇰🇷 한국어</button>
-        <button @click="changeLanguage('english')">🇺🇸 English</button>
-        <button @click="changeLanguage('japanese')">🇯🇵 日本語</button>
-        <button @click="changeLanguage('chinese')">🇨🇳 中文</button>
-      </div>
-
       <button
         @click="createImage" 
         class="add-image-button hidden-button"
       >
       </button>
 
+    </div>
+    <div class="buttons adjusted-buttons">
+      <button @click="changeLanguage('korean')">🇰🇷 한국어</button>
+      <button @click="changeLanguage('english')">🇺🇸 English</button>
+      <button @click="changeLanguage('japanese')">🇯🇵 日本語</button>
+      <button @click="changeLanguage('chinese')">🇨🇳 中文</button>
     </div>
   </div>
 </template>
@@ -165,9 +163,8 @@ function refreshButton() {
 }
 
 .adjusted-buttons {
-  top: 10px;
   right: 3vw;
-  padding: 6px 10px;
+  padding: 0px 10px;
   border-radius: 10px;
 }
 
