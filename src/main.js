@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import { inject } from '@vercel/analytics'
 import { createI18n } from 'vue-i18n';
 import { createPinia } from 'pinia'
 import App from './App.vue'
@@ -21,3 +22,5 @@ app.use(i18n)
 app.use(createPinia())
 
 app.mount('#app')
+
+inject({ mode: import.meta.env.DEV ? 'development' : 'production' })
